@@ -122,7 +122,10 @@ class Main {
 //        System.out.println("Reverse:"+str);
 
 //        str.length();
-//        System.out.println(str);
+//        System.out.println("Length:" + str.length());
+
+//        str.capacity();
+//        System.out.println("Capacity:"+str.capacity());
 
 
 
@@ -133,7 +136,7 @@ class Main {
 //
 //        String arr[] = newStr.split(" ");
 //        for (String s : arr) {
-//            StringBuilder str2 = new StringBuilder(s);
+//            StringBuilder str2 = new StringBuilder(s); //"i", "L"O"V"E", "J"A"V"A".
 //            result.append(str2.reverse().append(" "));
 //        }
 //
@@ -163,8 +166,6 @@ class Main {
 //        System.out.println(result);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 
 
 
