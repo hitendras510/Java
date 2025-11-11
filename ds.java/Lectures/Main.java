@@ -48,8 +48,8 @@ import java.util.Scanner;
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 import java.util.Scanner;
 
-class Main {
-    public static void main(String[] args) {
+//class Main {
+//    public static void main(String[] args) {
 //        Scanner sc = new Scanner(System.in);
 //        System.out.println("Enter the word:");
 //        String word = sc.nextLine();
@@ -145,29 +145,37 @@ class Main {
 
 
 
-        String str = "aaaaabbbccd";
-        StringBuilder result = new StringBuilder();
-        int count = 1;
-
-
-        for (int i = 1; i < str.length(); i++) {
-            if (str.charAt(i) == str.charAt(i - 1)) {
-                count++;
-            } else {
-
-                result.append(str.charAt(i - 1)).append(count);
-
-                count = 1;
-            }
-        }
-
-        result.append(str.charAt(str.length() - 1)).append(count);
-
-        System.out.println(result);
+//        String str = "aaaaabbbccd";
+//        StringBuilder result = new StringBuilder();
+//        int count = 1;
+//
+//
+//        for (int i = 1; i < str.length(); i++) {
+//            if (str.charAt(i) == str.charAt(i - 1)) {
+//                count++;
+//            } else {
+//
+//                result.append(str.charAt(i - 1)).append(count);
+//
+//                count = 1;
+//            }
+//        }
+//
+//        result.append(str.charAt(str.length() - 1)).append(count);
+//
+//        System.out.println(result);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+class Main {
+    static int a=5; //static keyword to make it static
+    int data=20;
+    public static void main(String[] args) {
+   Main obj=new Main();
+   System.out.println("Non static var : " +obj.data);
+   System.out.println("non static var : "+ a);
 
-
+   int c = 70;
+   System.out.println("static var : " +c);
 
 
 
