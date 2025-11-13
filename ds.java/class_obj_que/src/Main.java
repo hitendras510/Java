@@ -68,18 +68,97 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 3. Create a class BankAccount with fields accountNumber, accountHolder, and balance. Implement
 // methods to deposit and withdraw money.
-
-
-
+//class BankAccount{
+//    int accountNumber;
+//    String accountHolder;
+//    int balance;
+//    BankAccount(int accountNumber, String accountHolder, int balance){
+//        this.accountNumber = accountNumber;
+//        this.accountHolder = accountHolder;
+//        this.balance = balance;
+//    }
+//    void deposit(int amount){
+//        if(amount > 0){
+//        balance += amount;
+//            System.out.println("Deposited " + amount + " to account number " + accountNumber);
+//        } else {
+//            System.out.println("Insufficient funds!");
+//        }
+//    }
+//    void withdraw(int amount){
+//        if(amount<0){
+//            System.out.println("Insufficient funds!");
+//        }else if (amount > balance){
+//            System.out.println("Insufficient balance!");
+//        }else{
+//            balance -= amount;
+//            System.out.println(amount + "\n"+"updated balance = "+balance);
+//        }
+//    }
+//    void display(){
+//            System.out.println("\n--- Account Details ---");
+//            System.out.println("Account Number: " + accountNumber);
+//            System.out.println("Account Holder: " + accountHolder);
+//            System.out.println("Balance: " + balance);
+//        }
+//}
+//
+//    class Main {
+//        public static void main(String[] args) {
+//
+//
+//            BankAccount b = new BankAccount(12345, "Hitendra", 1000);
+//
+//            b.display();
+//
+//            b.deposit(500);
+//            b.withdraw(200);
+//            b.withdraw(2000); // insufficient balance
+//        }
+//    }
 //////////////////////////////////////////////////////////////////////////////////////////////////
-// 4. Create a class Car with fields brand, model, and price. Write a method to display car details.
-// Create multiple objects and display info.
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////////////
+/** 4. Create a class Car with fields brand, model, and price.
+ Write a method to display car details.
+ Create multiple objects and display info.
+ **/
+//class Car {
+//    String brand;
+//    String model;
+//    double price;
+//
+//    Car(String brand, String model, double price) {
+//        this.brand = brand;
+//        this.model = model;
+//        this.price = price;
+//    }
+//
+//    void display() {
+//        System.out.println("Brand: " + brand + ", Model: " + model + ", Price: " + price);
+//    }
+//}
+//
+//class Main {
+//    public static void main(String[] args) {
+//
+//
+//        Car car1 = new Car("Ford", "Figo", 50000);
+//        Car car2 = new Car("Toyota", "Innova", 60000);
+//        Car car3 = new Car("Tata", "Nexon", 120000);
+//
+//
+//        car1.display();
+//        car2.display();
+//        car3.display();
+//    }
+//}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  5. Create a class Circle with radius. Write methods to calculate area and circumference of the circle.
+class Circle{
+    int radius;
+    int area;
+    int circumference;
 
+}
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
