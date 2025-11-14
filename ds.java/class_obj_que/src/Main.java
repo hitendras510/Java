@@ -246,11 +246,41 @@
 //        System.out.println("Updated Salary: " + finalSalary);
 //    }
 //}
+
+import java.util.Scanner;
+
 //////////////////////////////////////////////////////////////////////////////////////////////////
 // 8. Create a class Movie with name, rating, and releaseYear. Create 5 movie objects and display
 // movies released after 2020.
+class Movie{
+    String name;
+    double rating;
+    int year;
+    Movie(String name,double rating,int year){
+        this.name=name;
+        this.rating=rating;
+        this.year=year;
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        Movie m1 = new Movie("KGF 2", 8.9, 2022);
+        Movie m2 = new Movie("Avengers Endgame", 9.0, 2019);
+        Movie m3 = new Movie("RRR", 9.2, 2022);
+        Movie m4 = new Movie("Dune", 8.3, 2021);
+        Movie m5 = new Movie("Joker", 8.7, 2019);
 
+        Movie[] movies={m1,m2,m3,m4,m5};
 
+        System.out.println("Movies released after 2020:");
+       for (int i=0;i<movies.length;i++){
+           if(movies[i].year>2020){
+               System.out.println(movies[i].name + " (" + movies[i].year + ")");
+           }
+       }
+
+    }
+}
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //  9. Create a class Calculator with methods add, subtract, multiply, and divide. Use objects to call
 // these methods.
