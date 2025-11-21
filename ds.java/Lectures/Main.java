@@ -220,44 +220,23 @@ import java.util.Scanner;
 
 //lect6
 
-class Car {
-    int a;
-    String name;
-Car(int a,String name) {
-    this.a=a;
-    this.name=name;
-System.out.println("Name: "+" "+name);
-System.out.println("age: "+" "+a);
-}
-}
-class Main{
-    public static void main(String[] args){
-        Car s1=new Car(31,"Jain");
-        System.out.println("\n");
-        Car s2=new Car(43,"Mishra");
-        System.out.println("\n");
-        Car s3=new Car(52,"Singh");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//class Car {
+//    int a;
+//    String name;
+//Car(int a,String name) {
+//    this.a=a;
+//    this.name=name;
+//System.out.println("Name: "+" "+name);
+//System.out.println("age: "+" "+a);
+//}
+//}
+//class Main{
+//    public static void main(String[] args){
+//        Car s1=new Car(31,"Jain");
+//        System.out.println("\n");
+//        Car s2=new Car(43,"Mishra");
+//        System.out.println("\n");
+//        Car s3=new Car(52,"Singh");
 /// ////////////////////////////////////////////////////////////////////////////////
 
 

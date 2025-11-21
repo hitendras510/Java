@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ds.java/2d array/2d array.iml" filepath="$PROJECT_DIR$/ds.java/2d array/2d array.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds.java/2d array que/2d array que.iml" filepath="$PROJECT_DIR$/ds.java/2d array que/2d array que.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ds.java/Interface/Interface.iml" filepath="$PROJECT_DIR$/ds.java/Interface/Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Main.java.iml" filepath="$PROJECT_DIR$/Main.java.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds.java/array que/array que.iml" filepath="$PROJECT_DIR$/ds.java/array que/array que.iml" />
       <module fileurl="file://$PROJECT_DIR$/ds.java/class_obj_que/class_obj_que.iml" filepath="$PROJECT_DIR$/ds.java/class_obj_que/class_obj_que.iml" />
