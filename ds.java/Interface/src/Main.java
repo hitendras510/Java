@@ -17,21 +17,43 @@
 //    }
 //}
 //////////////////////////////////////////////////////////////
+import java.util.Scanner;
+
 class Youtube {
     private String ChannelName;
     private int SubscriberCount;
+    private int pin;
 
-    public Youtube(String ChannelName, int SubscriberCount) {
+
+    private boolean isUnlocked = false;
+
+    public Youtube(String ChannelName, int SubscriberCount, int pin) {
         this.ChannelName = ChannelName;
         this.SubscriberCount = SubscriberCount;
+        this.pin = pin;
     }
 
     public void getChannelName() {
         System.out.println("Channel Name: " + ChannelName);
     }
 
-    public void getSubscriberCount() {
-        System.out.println("Subscriber Count: " + SubscriberCount);
+
+    public void unlock(int enteredPin) {
+        if (enteredPin == pin) {
+            isUnlocked = true;
+            System.out.println("Access Granted!");
+        } else {
+            System.out.println("Incorrect PIN! Access Denied.");
+        }
+    }
+
+    // show subscriber count only if unlocked
+    public void showSubscriberCount() {
+        if (isUnlocked) {
+            System.out.println("Subscriber Count: " + SubscriberCount);
+        } else {
+            System.out.println("You must unlock the account first!");
+        }
     }
 
     public void increaseSubscriberCount() {
@@ -49,30 +71,22 @@ class Youtube {
 
 public class Main {
     public static void main(String[] args) {
-        Youtube y1 = new Youtube("Code with Rupesh", 0);
+        Scanner sc = new Scanner(System.in);
+
+        Youtube y1 = new Youtube("Code with Rupesh", 0, 1234);
+
         y1.getChannelName();
-        y1.getSubscriberCount();
+
+        System.out.print("Enter PIN to unlock: ");
+        int pin = sc.nextInt();
+        y1.unlock(pin);
+
+        y1.showSubscriberCount();
         y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
+        y1.showSubscriberCount();
+        y1.increaseSubscriberCount();
+        y1.showSubscriberCount();
         y1.decreaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.decreaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
-        y1.increaseSubscriberCount();
-        y1.getSubscriberCount();
+        y1.showSubscriberCount();
     }
 }
