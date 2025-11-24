@@ -7,4 +7,4 @@ class main{
 
         System.out.println(n);
     }
-}
+};
