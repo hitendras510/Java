@@ -1,3 +1,5 @@
-package p2;
-
-
+class child {
+    void age() {
+        System.out.println("Age: 20");
+    }
+}
