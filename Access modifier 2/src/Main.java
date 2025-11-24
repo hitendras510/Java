@@ -1,10 +1,12 @@
-import java.util.Scanner;
+import p1.a;
 
-class main{
+class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-
-        System.out.println(n);
+        a a1 = new a();
+        a1.show();
+        a1.publicVar();
+        a1.protectVar();
+        a1.defaultVar();
+        a1.privateVar();
     }
-};
+}
