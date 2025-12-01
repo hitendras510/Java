@@ -2,6 +2,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 
 //class hello{
 // public  static void main(String[] args){
@@ -13,7 +14,7 @@ import java.util.Collections;
 //     System.out.println(list);
 // }
 //}
-
+//
 
 class Student implements Comparable<Student> {
 int RollNo;
@@ -29,6 +30,11 @@ public String toString(){
     return "Student RollNo: "+RollNo+", Name: "+name;
 }
 }
+class NameSorted implements Comparator<Student> {
+    public int compare(Student o1, Student o2) {
+        return o1.name.compareTo(o2.name);
+    }
+}
 
 class hello{
     public static void main(String[] args) {
@@ -37,7 +43,9 @@ class hello{
         list.add(new Student(216, "Om" ));
         list.add(new Student(23, "Krishna"));
         list.add(new Student(24, "Anish"));
-        Collections.sort(list);
-        System.out.println(list);
+        Collections.sort(list, new NameSorted());
+        for(Student s: list){
+            System.out.println(s);
+        }
     }
 }
