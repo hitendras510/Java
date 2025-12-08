@@ -20,7 +20,6 @@ class Main {
                 it.set(10);   // replace 4 with 10
             }
         }
-
         System.out.println("After modification: " + list);
     }
 }
