@@ -25,6 +25,7 @@ class Main {
             int val = it.next();
         System.out.println(val);
         }
+
         while(it.hasPrevious()){
             int val1 =  it.previous();
             System.out.println(val1);
